@@ -4,27 +4,28 @@ import { Box, Typography, Button } from '@mui/material';
 import HeroBannerGambar from '../assets/images/banner.png';
 
 const HeroBanner = () => {
-  return (
-    <Box sx={{
-        mt: { lg: '212px', xs: '70px'}, ml: { sm: '50px'}}} position='relative' p='20px'>
-        <Typography color='#fa7e04' fontWeight='600' fontSize='26px'>
-            Klub Fitness
-        </Typography>
-        <Typography fontWeight={700} sx={{ fontSize: { lg: '44px', xs: '40px'}}} color="#4b3832">
-            Latihan untuk Sehat, <br/> dan Kuat !
-        </Typography>
-        <Typography fontSize='22px' lineHeight='35px' mb={3} color="#4b3832">
-            Ayo cek latihan efektif untuk meningkatkan kebugaran!  
-        </Typography>
-        <Button variant='contained' color='success' href='#exercises' sx={{ backgroundColor: '#fa7e04', padding: '10px'}}>
-            Telusuri Latihan
-        </Button>
-        <Typography fontWeight={600} color='#fa7e04' sx={{opacity: '0.1', display: { lg: 'block', xs: 'none'}}} fontSize='200px'>
-            Latihan
-        </Typography>
-        <img src={HeroBannerGambar} alt='hero-banner' className='hero-banner-img' />
-    </Box>
-  )
+    return (
+        <Box sx={{
+            mt: { lg: '212px', xs: '55px' }, ml: { sm: '45px' }
+        }} position='relative' p='25px'>
+            <Typography color='#4034eb' fontWeight='550' fontSize='24px'>
+                Klub Fitness
+            </Typography>
+            <Typography fontWeight={550} sx={{ fontSize: { lg: '40px', xs: '30px' } }} color="#4b3832">
+                Latihan untuk Sehat, <br /> dan Kuat !
+            </Typography>
+            <Typography fontSize='18px' lineHeight='32px' mb={2} color="#4b3832">
+                Ayo cek latihan efektif untuk meningkatkan kebugaran!
+            </Typography>
+            <Button variant='contained' color='success' href='#exercises' sx={{ backgroundColor: '#0d2fd9', padding: '8px' }}>
+                Telusuri Latihan
+            </Button>
+            <Typography fontWeight={550} color='#4034eb' sx={{ opacity: '0.2', display: { lg: 'block', xs: 'none' } }} fontSize='150px'>
+                Sehat & Bugar
+            </Typography>
+            <img src={HeroBannerGambar} alt='hero-banner' className='hero-banner-img' />
+        </Box>
+    )
 }
 
 export default HeroBanner

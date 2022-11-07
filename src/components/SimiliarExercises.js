@@ -6,22 +6,22 @@ import Loader from './Loader';
 
 const SimiliarExercises = ({ targetMuscleExercises, equipmentExercises }) => {
   return (
-    <Box sx={{ mt: { lg: '100px', xs: '0'}}}>
-      <Typography variant='h3' mb={5}>Latihan yang memusatkan pada bagian otot sejenis</Typography>
-      <Stack direction='row' sx={{ p: '2', position: 'relative'}}>
+    <Box sx={{ mt: { lg: '70px', xs: '0' } }}>
+      <Typography variant='h4' ml='40px' mb={5}>Latihan yang memusatkan pada bagian otot sejenis</Typography>
+      <Stack direction='row' sx={{ p: '2', position: 'relative' }}>
         {targetMuscleExercises.length ? <HorizontalScrollbar data={targetMuscleExercises} />
-        : <Loader />}
+          : <Loader />}
       </Stack>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <Typography variant='h3' mb={5}>Latihan yang menggunakan peralatan sejenis</Typography>
-      <Stack direction='row' sx={{ p: '2', position: 'relative'}}>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <Typography variant='h4' ml='40px' mb={5}>Latihan yang menggunakan peralatan sejenis</Typography>
+      <Stack direction='row' sx={{ p: '2', position: 'relative' }}>
         {equipmentExercises.length ? <HorizontalScrollbar data={equipmentExercises} />
-        : <Loader />}
+          : <Loader />}
       </Stack>
     </Box>
   )
